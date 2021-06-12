@@ -5,12 +5,24 @@ Analyse cereal price inflation and for developing countries with data visualisat
 
 ## How To Run the Inflation Analysis
 
-**Open `Global Food Prices.ipynb` and do the following:**
-1. Download World Food Programme data
-Download [wfpvam_foodprices.csv](https://data.humdata.org/dataset/wfp-food-prices)
-2. Point dataframe, `df`, to read from the location where you saved `wfpvam_foodprices.csv`
+### 1. Install package dependency requirements
+
+Run `pip3 install -r requirements.txt`
+
+### 2. Download World Food Programme dataset
+- Navigate to [Global Food Prices Database (WFP) homepage](https://data.humdata.org/dataset/wfp-food-prices) where dataset is hosted and download `wfpvam_foodprices.csv`
+
+### 3. Move dataset to expected location
+The analysis Jupyter notebook, `Global Food Prices.ipynb`, expects the dataset to be saved locally in this repository folder at the root level. 
+
+If you want to save it in a different location, update `Global Food Prices.ipynb` to read from the location you saved it to when initializing the dataframe, `df`:
 
 `df = pd.read_csv('/your_path_to/wfpvam_foodprices.csv')`
 
-3. Modify timeframe according to your needs
+### 4. Open inflation analysis Jupyter notebook
+
+- Run `jupyter notebook`
+- Navigate to browser where the `Global Food Prices.ipynb` notebook was launched & execute cells (Cells > Run All)
+
+### 5. (Optional) Modify analysis timeframe according to your needs
 Currently, the inflation analysis is conducted on a 6 month horizon, with start month October 2020 and end month April 2021. However, if you'd like to change the time window of analysis or start and end month, modify accordingly.
