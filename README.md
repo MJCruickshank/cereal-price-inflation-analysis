@@ -1,10 +1,11 @@
-# cereal-price-inflation-analysis
+# Cereal Price Inflation Analysis
 Analyse cereal price inflation and for developing countries with data visualisation.
 
-## 6 month inflation analysis
+![image](https://user-images.githubusercontent.com/78884789/121784143-8e7b6200-cbb2-11eb-971d-720b7b3f00e9.png)
 
-To run the inflation analysis, open `Global Food Prices.ipynb` and do the following:
+## How To Run the Inflation Analysis
 
+**Open `Global Food Prices.ipynb` and do the following:**
 1. Download World Food Programme data
 Download [wfpvam_foodprices.csv](https://data.humdata.org/dataset/wfp-food-prices)
 2. Point dataframe, `df`, to read from the location where you saved `wfpvam_foodprices.csv`
